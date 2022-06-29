@@ -1,0 +1,25 @@
+<div class="body">
+  <div class="login">
+    <form [formGroup]="this.addProductForm" (ngSubmit)="this.addUpdateProduct()">
+      <h1>Agregar Producto</h1>
+
+      <mat-form-field class="ancho" appearance="fill">
+        <mat-label>Nombre producto</mat-label>
+        <input matInput placeholder="Nombre producto" value="" autocomplete="off" formControlName="name" required>
+      </mat-form-field>
+      <mat-form-field class="ancho" appearance="fill">
+        <mat-label>Precio</mat-label>
+        <input matInput placeholder="Precio" formControlName="price" required autocomplete="off">
+      </mat-form-field>
+
+      <mat-form-field class="ancho" appearance="fill">
+        <mat-label>Stock</mat-label>
+        <input matInput placeholder="Stock" formControlName="stock" required autocomplete="off">
+      </mat-form-field>
+
+      <button mat-stroked-button type="submit" class="ancho" color="primary"
+              [disabled]="this.addProductForm.invalid">{{this.buttonTitle}}
+      </button>
+    </form>
+  </div>
+</div>

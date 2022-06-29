@@ -1,0 +1,16 @@
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+.login {
+  width: 100%;
+  max-width: 330px;
+  text-align: center;
+}
+
+.ancho {
+  width: 80%;
+}

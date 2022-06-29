@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+.ta-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+}
+
+/*table*/
+table {
+  width: 100%;
+}
+
+th {
+  width: 20%;
+}
+
+.th-right {
+  text-align: right;
+}
+
+.th-cursor-pointer {
+  cursor: pointer;
+}
+
+.btn-search {
+  color: #00c207;
+}
+
+.btn-edit {
+  color: #004cbe;
+}
+
+.btn-delete {
+  color: #e00416;
+}
